@@ -25,6 +25,8 @@ public class Main extends Application {
             HBox page = loader.load();
             Controller controller = loader.getController();
 
+            // FXMLLoader.load() also creates the controller and calls its initialize method
+
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
             primaryStage.setTitle("My FXML sample");
